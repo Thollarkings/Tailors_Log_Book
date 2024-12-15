@@ -1,6 +1,6 @@
 {
     "name": "Tailors Log Book",
-    "short_name": "App",
+    "short_name": "Tailor's Log",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
