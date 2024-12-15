@@ -1,14 +1,12 @@
-// Service Worker Registration
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('service-worker.js').then((registration) => {
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, (error) => {
+        }).catch((error) => {
             console.log('ServiceWorker registration failed: ', error);
         });
     });
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('form');
