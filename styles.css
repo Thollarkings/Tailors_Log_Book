@@ -1,0 +1,320 @@
+header {
+    padding: 50px;
+    background:linear-gradient( rgb(62, 92, 147), rgb(43, 2, 52), rgb(62, 92, 147));
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  h4 span {
+    font-weight: normal;
+    margin-left: 5px;
+  }
+
+  h3 {
+    color: #130257;
+  }
+
+
+
+.value {
+    color: rgb(0, 0, 0); /* Change to your desired color for values */
+    font-weight: bold; /* Optional: make values bold */
+}
+  
+  main {
+    padding-top: 2%;
+    padding-left: 3%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    text-align: left;
+    border: #007BFF;
+    background-color: #a097b8;
+    margin: 10px;
+    border-radius: 20px;
+  }
+
+  #title {
+    text-align: center;
+    
+  }
+
+    main article {
+    width: 51%;
+    background-color: rgb(213, 195, 214);
+    border-radius: 20px;
+    padding: 1%;
+    margin-left: 10px;
+  }
+
+  main article div {
+    width: 95%;
+    
+    }
+
+
+
+  label {
+    font-size: 1rem; /* Adjust label font size */
+    font-weight: bold; /* Make labels stand out */
+    margin-bottom: 0; /* Add space below label */
+    display: block; /* Ensure labels are above inputs */
+    color: #333; /* Set label text color */
+    padding: 5px;
+    margin-left: 10px;
+    max-width: 100%;
+    
+  }
+
+  input {
+    width: 92%;
+    padding: 5px; /* Add padding inside inputs */
+    font-size: 1rem; /* Ensure input text is readable */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Smooth rounded corners */
+   
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    font-size: 1rem; /* Adjust label font size */
+    margin-bottom: 0; /* Add space below label */
+    display: block; /* Ensure labels are above inputs */
+    color: #333; /* Set label text color */
+    padding: 5px;
+    margin-left: 10px;
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+    
+  input:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007BFF; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add subtle glow on focus */
+  }
+  
+  #saveButton {
+    padding: 1px;                
+    background-color: #f3f1f7;  
+    margin-bottom: 20px;   
+    border: 3px solid #cab1d6; 
+    border-radius: 10px;  
+    margin-left: 10px;  
+  }
+
+  .collapsible {
+    margin: 20px 0;
+    width: 40%;
+}
+
+
+
+
+.toggle-button {
+    background: linear-gradient( rgb(62, 92, 147), rgb(43, 2, 52), rgb(62, 92, 147));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+.collapsible-content {
+    display: none; /* Initially hidden */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100;
+}
+
+.collapsible-content form {
+    display: flex;
+    flex-direction: column; /* Stack form fields vertically */
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+  .measurement-card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.measurement-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.measurement-card table td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.measurement-card button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+details {
+    margin-top: 10px;
+}
+
+summary {
+    cursor: pointer;
+    color: #8e0b4d;
+    font-weight: bold;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.card-actions button {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, rgb(62, 92, 147), rgb(43, 2, 52), rgb(62, 92, 147));
+}
+
+.card-actions button:first-child {
+  background:linear-gradient(70deg, rgb(62, 92, 147), rgb(43, 2, 52), rgb(62, 92, 147));
+  color: white;
+}
+
+.card-actions button:last-child {
+  background: linear-gradient( rgb(62, 92, 147), rgb(43, 2, 52), rgb(62, 92, 147));
+  color: white;
+  
+}
+
+.card-actions button:first-child:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-actions button:last-child:hover {
+  background-color: #d32f2f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-actions button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+  position: fixed;
+  right: -85px; /* Position it at the right side */
+  bottom: 100px; /* Keep it at the bottom */
+  width: 200px; /* Adjust width accordingly */
+  text-align: center; /* Center the text */
+  padding: 5px; /* Optional */
+  transform: rotate(-90deg); /* Rotate text 90 degrees */
+ 
+}
+
+#footer h5 {
+  font-size: 1em;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+
+  main {
+    padding: 3%;
+    padding-left: 3%;
+    display: block;
+    margin: auto;
+    justify-content: space-between;
+    text-align: left;
+    border: #007BFF;
+    background-color: #a097b8;
+    margin: 10px;
+    border-radius: 20px;
+  }
+
+  main form {
+    border: dashed grey;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+main form p {
+  margin-top: 10px;
+}
+
+main article {
+    width: 96%;
+    background-color: rgb(213, 195, 214);
+    border-radius: 20px;
+    
+    margin-left: 0.7%;
+  
+}
+
+main article div {
+    width: 90%;
+    margin-left: 1%;
+    
+}
+
+.collapsible {
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+#footer {
+  position: fixed;
+  right: -85px; /* Position it at the right side */
+  bottom: 80px; /* Keep it at the bottom */
+  width: 200px; /* Adjust width accordingly */
+  text-align: center; /* Center the text */
+  padding: 5px; /* Optional */
+  transform: rotate(-90deg); /* Rotate text 90 degrees */
+ 
+}
+
+#footer h5 {
+  font-size: 1em;
+}
+}

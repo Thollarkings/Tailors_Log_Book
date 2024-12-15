@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Measurement Recorder</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json">
+    <script src="script.js" defer></script>
+
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Measurement Recorder</h1>
+      <p>
+        This app is an essential tool for accurately recording client
+        measurements, tracking key details, and ensuring precise fittings and
+        timely delivery.
+      </p>
+    </header>
+    <main>
+      <div class="collapsible">
+        
+        <p><input type="text" id="searchInput" placeholder="Search by name..." /></p>
+        <h4>Click on the button below to view/hide the measurments book</h4>
+        <button class="toggle-button">Data Log Book</button>
+        <div class="collapsible-content">
+        <form id="form">
+        
+
+        <label for="name">Client's Name *</label>
+        <input type="text" id="name" name="name" placeholder="Client's name" required />
+
+        <label for="pNumber">Client's Phone Number *</label>
+        <input type="number" id="pNumber" name="phone" placeholder="XXX XXX XXXX" required />
+
+        <label for="head">Head</label>
+        <input type="number" id="head" name="head" placeholder="Enter head measurement" min="0" max="100" />
+
+        <label for="shoulder-to-shoulder">Shoulder to Shoulder</label>
+        <input
+          type="number"
+          id="shoulder-to-shoulder"
+          name="shoulderToShoulder"
+          placeholder="Enter shoulder to shoulder measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="neck">Neck</label>
+        <input type="number" id="neck" name="neck" placeholder="Enter neck measurement" min="0" max="100" />
+
+        <label for="chest">Chest</label>
+        <input type="number" id="chest" name="chest" placeholder="Enter chest measurement" min="0" max="150" />
+
+        <label for="waist">Waist</label>
+        <input type="number" id="waist" name="waist" placeholder="Enter waist measurement" min="0" max="150" />
+
+        <label for="shoulder-to-nipple">Shoulder to Nipple</label>
+        <input
+          type="number"
+          id="shoulder-to-nipple"
+          name="shoulderToNipple"
+          placeholder="Enter shoulder to nipple measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="shoulder-to-underbust">Shoulder to Underbust</label>
+        <input
+          type="number"
+          id="shoulder-to-underbust"
+          name="shoulderToUnderbust"
+          placeholder="Enter shoulder to underbust measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="shoulder-to-waist">Shoulder to Waist</label>
+        <input
+          type="number"
+          id="shoulder-to-waist"
+          name="shoulderToWaist"
+          placeholder="Enter shoulder to waist measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="nipple-to-nipple">Nipple to Nipple</label>
+        <input
+          type="number"
+          id="nipple-to-nipple"
+          name="nippleToNipple"
+          placeholder="Enter nipple to nipple measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="sleeve-length">Sleeve Length</label>
+        <input
+          type="number"
+          id="sleeve-length"
+          name="sleeveLength"
+          placeholder="Enter sleeve length measurement"
+          min="0"
+          max="150"
+        />
+
+        <label for="round-sleeve">Round Sleeve</label>
+        <input
+          type="number"
+          id="round-sleeve"
+          name="roundSleeve"
+          placeholder="Enter round sleeve measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="hip">Hip</label>
+        <input
+          type="number"
+          id="hip"
+          name="hip"
+          placeholder="Enter hip measurement"
+          min="0"
+          max="150"
+        />
+
+        <label for="half-length">Half Length</label>
+        <input
+          type="number"
+          id="half-length"
+          name="halfLength"
+          placeholder="Enter half length measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="top-length">Top Length</label>
+        <input
+          type="number"
+          id="top-length"
+          name="topLength"
+          placeholder="Enter top length measurement"
+          min="0"
+          max="150"
+        />
+
+        <label for="gown-length">Gown Length</label>
+        <input
+          type="number"
+          id="gown-length"
+          name="gownLength"
+          placeholder="Enter gown length measurement"
+          min="0"
+          max="200"
+        />
+
+        <label for="trouser-waist">Trouser Waist</label>
+        <input
+          type="number"
+          id="trouser-waist"
+          name="trouserWaist"
+          placeholder="Enter trouser waist measurement"
+          min="0"
+          max="150"
+        />
+
+        <label for="crotch">Crotch</label>
+        <input
+          type="number"
+          id="crotch"
+          name="crotch"
+          placeholder="Enter crotch measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="trouser-length">Trouser Length</label>
+        <input
+          type="number"
+          id="trouser-length"
+          name="trouserLength"
+          placeholder="Enter trouser length measurement"
+          min="0"
+          max="150"
+        />
+
+        <label for="thigh">Thigh</label>
+        <input
+          type="number"
+          id="thigh"
+          name="thigh"
+          placeholder="Enter thigh measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="waist-to-knee">Waist to Knee</label>
+        <input
+          type="number"
+          id="waist-to-knee"
+          name="waistToKnee"
+          placeholder="Enter waist to knee measurement"
+          min="0"
+          max="150"
+        />
+
+        <label for="calf">Calf</label>
+        <input
+          type="number"
+          id="calf"
+          name="calf"
+          placeholder="Enter calf measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="ankle">Ankle</label>
+        <input
+          type="number"
+          id="ankle"
+          name="ankle"
+          placeholder="Enter ankle measurement"
+          min="0"
+          max="100"
+        />
+
+        <label for="inside-leg-seam">Inside Leg Seam</label>
+        <input
+          type="number"
+          id="inside-leg-seam"
+          name="insideLegSeam"
+          placeholder="Enter inside leg seam measurement"
+          min="0"
+          max="150"
+        />
+
+        <label for="comments">Additional Comments</label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Add comments here"
+        ></textarea>
+
+        <button id="saveButton" type="button">Save Measurements</button>
+        
+      </form>
+    </div>
+  </div>
+      
+      
+
+      <article>
+        <h2 id="title">Measurements</h2>
+        <div id="measurements_container"></div>
+      </article>
+
+
+    </main>
+
+    <footer id="footer"><h5>&copy; Thollarkings 2024</h5></footer>
+  </body>
+</html>
