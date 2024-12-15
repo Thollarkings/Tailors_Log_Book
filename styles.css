@@ -24,10 +24,19 @@ header {
 
 
 .value {
-    color: rgb(0, 0, 0); /* Change to your desired color for values */
+    color: rgb(88, 16, 18); /* Change to your desired color for values */
     font-weight: bold; /* Optional: make values bold */
 }
   
+body {
+  background: linear-gradient(135deg, 
+  #430844, 
+  #9881a5, 
+  #620351) 
+
+}
+
+
   main {
     padding: 1.5%;
     display: flex;
@@ -157,11 +166,11 @@ header {
 
 
   .measurement-card {
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #9e7eaa,  #e3d0e6, #c1a2c6, #dacadd, #d1c6e6);
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.695);
     width: 100%;
 }
 
@@ -191,8 +200,11 @@ details {
 
 summary {
     cursor: pointer;
-    color: #8e0b4d;
+    color: #0c0563;
     font-weight: bold;
+    
+    text-decoration-line: overline;
+    outline: #24021f;
 }
 
 .card-actions {
