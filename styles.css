@@ -29,8 +29,7 @@ header {
 }
   
   main {
-    padding-top: 2%;
-    padding-left: 3%;
+    padding: 1%;
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -39,6 +38,7 @@ header {
     background-color: #a097b8;
     margin: 10px;
     border-radius: 20px;
+
   }
 
   #title {
@@ -115,8 +115,14 @@ header {
   .collapsible {
     margin: 20px 0;
     width: 40%;
+    
 }
 
+.collapsible h4 {
+  margin: 10px 5px;
+  width: 100%;
+  text-align: center;
+}
 
 
 
@@ -136,6 +142,7 @@ header {
     border: 1px solid #ccc;
     border-radius: 10px;
     width: 100;
+    
 }
 
 .collapsible-content form {
